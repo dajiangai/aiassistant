@@ -116,7 +116,7 @@
       <FormOther moduleKey="register" tag="注册账号" @updateActiveModule="updateActiveModule" />
     </n-space>
 
-    <DemoAccount @login="handleDemoAccountLogin" />
+    <!-- <DemoAccount @login="handleDemoAccountLogin" /> -->
   </n-form>
 </template>
 
@@ -127,9 +127,7 @@
   import { useUserStore } from '@/store/modules/user';
   import { useMessage, useLoadingBar } from 'naive-ui';
   import { ResultEnum } from '@/enums/httpEnum';
-  import { PersonOutline, LockClosedOutline } from '@vicons/ionicons5';
   import { PageEnum } from '@/enums/pageEnum';
-  import { SafetyCertificateOutlined, MobileOutlined } from '@vicons/antd';
   import { GetCaptcha } from '@/api/base';
   import { aesEcb } from '@/utils/encrypt';
   import DemoAccount from './demo-account.vue';

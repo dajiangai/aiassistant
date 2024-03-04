@@ -148,7 +148,7 @@
     smtpPort: 25,
     smtpUser: '',
     smtpPass: '',
-    smtpSendName: 'HotGo',
+    smtpSendName: '咕嘟AI助手',
     smtpAdminMailbox: '',
     smtpMinInterval: 60,
     smtpMaxIpLimit: 10,

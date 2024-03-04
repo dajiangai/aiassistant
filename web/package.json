@@ -1,10 +1,10 @@
 {
-  "name": "hotgo",
-  "version": "2.12.1",
+  "name": "guduai",
+  "version": "1.0.1",
   "author": {
-    "name": "MengShuai",
-    "email": "133814250@qq.com",
-    "url": "https://github.com/bufanyun/hotgo"
+    "name": "dajiang",
+    "email": "1226325290@qq.com",
+    "url": ""
   },
   "private": true,
   "scripts": {
@@ -126,13 +126,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bufanyun/hotgo.git"
+    "url": ""
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bufanyun/hotgo/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/bufanyun/hotgo",
+  "homepage": "",
   "engines": {
     "node": ">=16"
   }

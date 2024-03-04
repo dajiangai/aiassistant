@@ -3,19 +3,19 @@
     <n-card title="应用入口" style="margin-bottom: 16px">
       <n-tabs type="line" animated>
         <n-tab-pane name="admin" tab="后台API">
-          <Form path="/admin/hgexample/index/test?name=HotGo" />
+          <Form path="/admin/hgexample/index/test?name=咕嘟AI助手" />
         </n-tab-pane>
         <n-tab-pane name="api" tab="前台API">
-          <Form path="/api/hgexample/index/test?name=HotGo" />
+          <Form path="/api/hgexample/index/test?name=咕嘟AI助手" />
         </n-tab-pane>
         <n-tab-pane name="home" tab="前台页面">
-          <Form path="/home/hgexample/index/test?name=HotGo" />
+          <Form path="/home/hgexample/index/test?name=咕嘟AI助手" />
         </n-tab-pane>
         <n-tab-pane name="static" tab="静态目录">
           <Form path="/addons/hgexample/default" />
         </n-tab-pane>
         <n-tab-pane name="websocket" tab="Websocket">
-          <Form path="/socket/hgexample/index/test?name=HotGo" />
+          <Form path="/socket/hgexample/index/test?name=咕嘟AI助手" />
         </n-tab-pane>
       </n-tabs>
     </n-card>

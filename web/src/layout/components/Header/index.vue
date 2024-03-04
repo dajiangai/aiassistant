@@ -7,7 +7,7 @@
     >
       <div class="logo" v-if="navMode === 'horizontal'">
         <img src="~@/assets/images/logo.png" alt="" />
-        <h2 v-show="!collapsed" class="title">HotGo</h2>
+        <h2 v-show="!collapsed" class="title">咕嘟AI助手</h2>
       </div>
       <AsideMenu
         @update:collapsed="updateMenu"
@@ -141,17 +141,6 @@
             <n-avatar v-else round :size="30">{{ userStore.realName }}</n-avatar>
           </div>
         </n-dropdown>
-      </div>
-      <!--设置-->
-      <div class="layout-header-trigger layout-header-trigger-min" @click="openSetting">
-        <n-tooltip placement="bottom-end">
-          <template #trigger>
-            <n-icon size="18" style="font-weight: bold">
-              <SettingOutlined />
-            </n-icon>
-          </template>
-          <span>项目配置</span>
-        </n-tooltip>
       </div>
     </div>
   </div>
@@ -350,17 +339,6 @@
 
       // 图标列表
       const iconList = [
-        // {
-        //   icon: 'SearchOutlined',
-        //   tips: '搜索',
-        // },
-        {
-          icon: 'GithubOutlined',
-          tips: 'github',
-          eventObject: {
-            click: () => window.open('https://github.com/bufanyun/hotgo'),
-          },
-        },
         {
           icon: 'BellOutlined',
           tips: '我的消息',

@@ -39,7 +39,7 @@
   const message = useMessage();
 
   const formValue = ref({
-    basicTest: 'HotGo',
+    basicTest: '咕嘟AI助手',
   });
 
   function formSubmit() {
