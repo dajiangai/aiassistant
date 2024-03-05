@@ -21,9 +21,9 @@ import (
 // MemberUpdateCashInp 更新会员提现信息
 type MemberUpdateCashInp struct {
 	Name      string `json:"name" v:"required#支付宝姓名不能为空"  dc:"支付宝姓名"`
-	PayeeCode string `json:"payeeCode" v:"required#支付宝收款码不能为空"  dc:"支付宝收款码"`
+	PayeeCode string `json:"payeeCode"   dc:"支付宝收款码"`
 	Account   string `json:"account" v:"required#支付宝账号不能为空"  dc:"支付宝账号"`
-	Password  string `json:"password" v:"required#密码不能为空"  dc:"密码"`
+	Password  string `json:"password"   dc:"密码"`
 }
 
 type MemberUpdateEmailInp struct {
@@ -63,7 +63,7 @@ type MemberProfileModel struct {
 
 // MemberUpdateProfileInp 更新用户资料
 type MemberUpdateProfileInp struct {
-	Avatar   string      `json:"avatar"   v:"required#头像不能为空"     dc:"头像"`
+	Avatar   string      `json:"avatar"        dc:"头像"`
 	RealName string      `json:"realName"  v:"required#真实姓名不能为空"       dc:"真实姓名"`
 	Qq       string      `json:"qq"          dc:"QQ"`
 	Birthday *gtime.Time `json:"birthday"    dc:"生日"`
@@ -115,7 +115,7 @@ type LoginMemberInfoModel struct {
 type MemberEditInp struct {
 	Id           int64       `json:"id"                                            dc:"管理员ID"`
 	RoleId       int64       `json:"roleId"    v:"required#角色不能为空"            dc:"角色ID"`
-	PostIds      []int64     `json:"postIds"   v:"required#岗位不能为空"            dc:"岗位ID"`
+	PostIds      []int64     `json:"postIds"               dc:"岗位ID"`
 	DeptId       int64       `json:"deptId"    v:"required#部门不能为空"            dc:"部门ID"`
 	Username     string      `json:"username"   v:"required#账号不能为空"           dc:"帐号"`
 	PasswordHash string      `json:"passwordHash"                                  dc:"密码hash"`
